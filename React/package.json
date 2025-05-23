@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "npm dev",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "dev": "vite",
     "preview": "vite preview",
     "test": "vite test",
