@@ -13,6 +13,14 @@ module.exports = {
       'createDefaultProgram': true,
       'ecmaVersion': 6,
     },
+    rules: {
+      "import/no-extraneous-dependencies": ["error", {
+        "devDependencies": [
+          "**/vite.config.ts", // allow vite in config file
+          "**/*.test.ts",      // allow test files if needed
+        ]
+      }]
+    },
     globals: {
       System: false,
       AzureGateway: false,
