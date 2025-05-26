@@ -77,6 +77,9 @@ jobs:
       with:
         node-version: 22
 
+    - name: Upgrade npm
+      run: npm install -g npm@latest
+
     - name: Restore npm cache
       uses: actions/cache@v3
       with:
