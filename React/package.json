@@ -26,7 +26,7 @@
     "test": "vite test",
     "eject": "vite eject",
     "lint-js": "eslint .",
-    "lint-css": "stylelint src/**/*.css --allow-empty-input",
+    "lint-css": "npx stylelint src/**/*.css --allow-empty-input",
     "lint": "npm-run-all -p -c lint-js lint-css"
   },
   "eslintConfig": {
