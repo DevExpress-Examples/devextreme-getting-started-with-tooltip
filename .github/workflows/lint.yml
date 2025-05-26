@@ -72,9 +72,9 @@ jobs:
     - name: Get sources
       uses: actions/checkout@v3
 
-    - name: Use Node.js
+    - name: Use Node.js 22
       uses: actions/setup-node@v3
-      with: 
+      with:
         node-version: 22
 
     - name: Restore npm cache
