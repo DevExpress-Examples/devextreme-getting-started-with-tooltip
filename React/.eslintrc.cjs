@@ -29,13 +29,5 @@ module.exports = {
         'forbidExtraProps',
       ],
     },
-  }, {
-    files: ['*.test.tsx'],
-    extends: ['devextreme/jest'],
-    settings: {
-      jest: {
-        version: 29
-      }
-    }
   }]
 };
