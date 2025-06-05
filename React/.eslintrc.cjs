@@ -39,5 +39,6 @@ module.exports = {
     },
   }, {
     files: ['*.test.tsx'],
+    extends: ['devextreme/jest']
   }]
 };
