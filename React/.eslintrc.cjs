@@ -1,16 +1,14 @@
 module.exports = {
   root: true,
   extends: ['devextreme/spell-check'],
-  "rules": {
-    // ...
-    "react/jsx-uses-react": "off",
-    'import/no-extraneous-dependencies': "off",
-    "react/react-in-jsx-scope": "off"
-  },
   overrides: [{
     files: ['*.ts', '*.tsx'],
-    excludedFiles: ['vite.config.ts', 'setupTests.ts', 'vitest.config.ts', '*.test.tsx'],
     extends: ['devextreme/react'],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      'import/no-extraneous-dependencies': "off",
+      "react/react-in-jsx-scope": "off"
+    },
     env: {
       browser: true,
       es6: true
