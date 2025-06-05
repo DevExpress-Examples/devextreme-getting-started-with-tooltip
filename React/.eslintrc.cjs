@@ -31,6 +31,11 @@ module.exports = {
     },
   }, {
     files: ['*.test.tsx'],
-    extends: ['devextreme/jest']
+    extends: ['devextreme/jest'],
+    settings: {
+      jest: {
+        version: 29
+      }
+    }
   }]
 };
