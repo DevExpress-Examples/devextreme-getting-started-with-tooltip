@@ -10,8 +10,8 @@ module.exports = {
     },
     parserOptions: {
       project: './tsconfig.json',
-      'createDefaultProgram': true,
-      'ecmaVersion': 6,
+      createDefaultProgram: true,
+      ecmaVersion: 6,
     },
     globals: {
       System: false,
@@ -21,13 +21,28 @@ module.exports = {
     settings: {
       react: {
         createClass: 'createReactClass',
-        'pragma': 'React',
-        version: '16.2',
+        pragma: 'React',
+        version: '17.0',
         flowVersion: '0.53',
       },
       propWrapperFunctions: [
         'forbidExtraProps',
       ],
     },
+    rules: {
+      'react/react-in-jsx-scope': 'off',
+      'import/no-extraneous-dependencies': [
+        'error',
+        {
+          devDependencies: [
+            '**/vite.config.{js,ts}',
+            '**/vitest.config.{js,ts}',
+            '**/test/**',
+            '**/*.test.{js,ts}',
+            '**/*.spec.{js,ts}',
+          ],
+        },
+      ],
+    }
   }]
 };
