@@ -52,3 +52,9 @@ export default tseslint.config({
   },
 })
 ```
+
+## Further help
+
+You can learn more about React in the [React documentation](https://18.react.dev/learn).
+
+To get more help on DevExtreme submit an issue in the [Support Center](https://www.devexpress.com/Support/Center/Question/Create)
