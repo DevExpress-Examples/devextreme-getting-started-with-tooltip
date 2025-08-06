@@ -25,8 +25,9 @@ $(() => {
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
     contentTemplate(data) {
-      data[0].parentElement.classList.add('red-popup');
-      return $('<div>').text('Delete');
+      return $('<div>')
+        .addClass('red-tooltip')
+        .text('Delete');
     },
   });
 
@@ -41,8 +42,9 @@ $(() => {
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
     contentTemplate(data) {
-      data[0].parentElement.classList.add('blue-popup');
-      return $('<div>').text('Info');
+      return $('<div>')
+        .addClass('blue-tooltip')
+        .text('Info');
     },
   });
 });
