@@ -1,3 +1,40 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div class="dx-viewport">
+  <div class="buttons">
+    <dx-button id="like" icon="like"></dx-button>
+    <dx-button id="trash" icon="trash"></dx-button>
+    <dx-button id="info" icon="info"></dx-button>
+  </div>
+  <div class="tooltips">
+    <dx-tooltip
+      target="#like"
+      showEvent="mouseenter"
+      hideEvent="mouseleave"
+      contentTemplate="Like"
+    >
+    </dx-tooltip>
+    <dx-tooltip
+      target="#trash"
+      showEvent="mouseenter"
+      hideEvent="mouseleave"
+      contentTemplate="trashTooltip"
+    >
+      <div *dxTemplate="let model of 'trashTooltip'">
+        <div class="red-tooltip">
+          <span class="tooltip-text">Delete</span>
+        </div>
+      </div>
+    </dx-tooltip>
+    <dx-tooltip
+      target="#info"
+      showEvent="mouseenter"
+      hideEvent="mouseleave"
+      contentTemplate="infoTooltip"
+    >
+      <div *dxTemplate="let model of 'infoTooltip'">
+        <div class="blue-tooltip">
+          <span class="tooltip-text">Info</span>
+        </div>
+      </div>
+    </dx-tooltip>
+  </div>
 </div>
