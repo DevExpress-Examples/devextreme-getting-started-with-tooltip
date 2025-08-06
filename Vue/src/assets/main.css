@@ -3,6 +3,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin: 50px 50px;
   width: 90vh;
+}
+
+.dx-viewport {
+  padding: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dx-overlay-content:has(.blue-tooltip),
+.dx-overlay-content:has(.blue-tooltip) .dx-popover-arrow::after {
+  background-color: #0f6cbd;
+  color: white;
+}
+
+.dx-overlay-content:has(.red-tooltip),
+.dx-overlay-content:has(.red-tooltip) .dx-popover-arrow::after {
+  background-color: #d13438;
+  color: white;
 }
