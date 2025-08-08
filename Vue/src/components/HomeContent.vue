@@ -1,28 +1,52 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import 'devextreme/dist/css/dx.fluent.blue.light.css';
+import { DxButton } from 'devextreme-vue/button';
+import { DxTooltip } from 'devextreme-vue/tooltip';
 
-import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import DxButton from 'devextreme-vue/button';
-
-const props = defineProps({
-  text: {
-    type: String,
-    default: 'count',
-  },
-});
-const count = ref(0);
-const buttonText = computed<string>(
-  () => `Click ${props.text}: ${count.value}`
-);
-function clickHandler() {
-  count.value += 1;
-}
 </script>
 <template>
-  <div>
-    <DxButton
-      :text="buttonText"
-      @click="clickHandler"
-    />
+  <div class="dx-viewport">
+    <div class="buttons">
+      <DxButton
+        id="like"
+        icon="like"
+      />
+      <DxButton
+        id="trash"
+        icon="trash"
+      />
+      <DxButton
+        id="info"
+        icon="info"
+      />
+    </div>
+    <div class="tooltips">
+      <DxTooltip
+        target="#like"
+        show-event="mouseenter"
+        hide-event="mouseleave"
+        content-template="Like"
+      />
+      <DxTooltip
+        target="#trash"
+        show-event="mouseenter"
+        hide-event="mouseleave"
+        content-template="trashTooltip"
+      >
+        <template #trashTooltip>
+          <div class="red-tooltip">Delete</div>
+        </template>
+      </DxTooltip>
+      <DxTooltip
+        target="#info"
+        show-event="mouseenter"
+        hide-event="mouseleave"
+        content-template="infoTooltip"
+      >
+        <template #infoTooltip>
+          <div class="blue-tooltip">Info</div>
+        </template>
+      </DxTooltip>
+    </div>
   </div>
 </template>
