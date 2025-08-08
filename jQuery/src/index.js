@@ -9,9 +9,7 @@ $(() => {
     target: '#like',
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
-    contentTemplate() {
-      return $('<div>').text('Like');
-    },
+    contentTemplate: 'like'
   });
 
   $('#trash').dxButton({
