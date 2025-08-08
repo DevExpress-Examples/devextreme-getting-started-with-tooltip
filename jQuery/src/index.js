@@ -9,7 +9,7 @@ $(() => {
     target: '#like',
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
-    contentTemplate(data) {
+    contentTemplate() {
       return $('<div>').text('Like');
     },
   });
@@ -24,7 +24,7 @@ $(() => {
     target: '#trash',
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
-    contentTemplate(data) {
+    contentTemplate() {
       return $('<div>')
         .addClass('red-tooltip')
         .text('Delete');
@@ -41,7 +41,7 @@ $(() => {
     target: '#info',
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
-    contentTemplate(data) {
+    contentTemplate() {
       return $('<div>')
         .addClass('blue-tooltip')
         .text('Info');
