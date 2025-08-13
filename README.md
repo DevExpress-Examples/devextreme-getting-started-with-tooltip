@@ -8,6 +8,8 @@
 
 This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme Tooltip](https://js.devexpress.com/Documentation/Guide/UI_Components/Tooltip/Getting_Started_with_Tooltip/). The project creates a Tooltip and configures the component's core settings.
 
+<div align="center"><img src="./Tooltip.png" /></div>
+
 ## Files to Review
 
 - **jQuery**
