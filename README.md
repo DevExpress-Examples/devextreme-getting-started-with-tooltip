@@ -4,17 +4,9 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# DevExtreme Examples Template
+# DevExtreme Tooltip - Getting Started
 
-This is the repository template for creating new examples. 
-
-Use **DevExtreme _Product_ - _Task_** template for a title. 
-
-Describe the solved task in this section.
-
-Put a screenshot/gif that illustrates the result here.
-
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme Tooltip](https://js.devexpress.com/Documentation/Guide/UI_Components/Tooltip/Getting_Started_with_Tooltip/). The project creates a Tooltip and configures the component's core settings.
 
 ## Files to Review
 
@@ -32,15 +24,9 @@ Then, add implementation details (steps, code snippets, and other technical info
 
 ## Documentation
 
-- link
-- link
-- ...
+- [Getting Started with Tooltip](https://js.devexpress.com/Documentation/Guide/UI_Components/Tooltip/Getting_Started_with_Tooltip/)
 
-## More Examples
-
-- link
-- link
-- ...
+- [Tooltip - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxTooltip/)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
