@@ -9,7 +9,7 @@ $(() => {
     target: '#like',
     showEvent: 'mouseenter',
     hideEvent: 'mouseleave',
-    contentTemplate: 'like'
+    contentTemplate: 'like',
   });
 
   $('#trash').dxButton({
