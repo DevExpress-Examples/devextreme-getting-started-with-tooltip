@@ -21,8 +21,6 @@ This repository stores code for the following DevExpress tutorial: [Getting Star
     - [Home.vue](Vue/src/components/HomeContent.vue)
 - **React**
     - [App.tsx](React/src/App.tsx)
-- **NetCore**    
-    - [Index.cshtml](ASP.NET%20Core/Views/Home/Index.cshtml)
 
 ## Documentation
 
