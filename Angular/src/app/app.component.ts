@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 import { DxButtonModule } from 'devextreme-angular/ui/button';
+import { DxTooltipModule } from 'devextreme-angular/ui/tooltip';
 
 @Component({
     selector: 'app-root',
-    imports: [DxButtonModule],
+    imports: [DxButtonModule, DxTooltipModule],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
